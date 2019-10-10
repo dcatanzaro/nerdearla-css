@@ -1,0 +1,576 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    top: 10%;
+    left: 35%;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        position: absolute;
+        top: 10%;
+        left: 12%;
+        transform: scale(0.4);
+    }
+}
+
+.rectangle {
+    position: absolute;
+    width: 100px;
+    height: 400px;
+    border-radius: 90px;
+}
+.circle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    left: 10px;
+    top: 10px;
+}
+
+/* ############################ Letter N ############################ */
+
+.letter-n {
+    position: absolute;
+
+    .letter-n-1 {
+        border: 15px solid #d74543;
+
+        .circle {
+            border: 32px solid #d74543;
+            animation: circle_1 2s infinite alternate;
+        }
+    }
+    .letter-n-2 {
+        border: 15px solid #efd097;
+        transform: rotate(135deg);
+        left: 106px;
+        top: -44px;
+
+        .circle {
+            border: 32px solid #4e7f86;
+            animation: circle_1 2s infinite alternate;
+        }
+    }
+    .letter-n-3 {
+        border: 15px solid #4e7f86;
+        left: 212px;
+    }
+}
+
+/* ############################ Letter E ############################ */
+
+.letter-e {
+    position: absolute;
+    left: 450px;
+
+    .letter-e-1 {
+        border: 15px solid #4e7f86;
+
+        .circle1 {
+            border: 32px solid #4e7f86;
+            animation: circle_2 2s infinite alternate;
+        }
+
+        .circle2 {
+            top: 125px;
+            border: 32px solid #efd097;
+            animation: circle_3 2s infinite alternate;
+            animation-delay: 2s;
+        }
+
+        .circle3 {
+            border: 32px solid #d74543;
+            top: 310px;
+            animation: circle_2 2s infinite alternate;
+        }
+    }
+    .letter-e-2 {
+        border: 15px solid #efd097;
+        transform: rotate(90deg);
+        left: 100px;
+        top: -100px;
+        height: 300px;
+    }
+
+    .letter-e-3 {
+        border: 15px solid #d74543;
+        transform: rotate(90deg);
+        left: 60px;
+        top: 55px;
+        height: 220px;
+    }
+
+    .letter-e-4 {
+        border: 15px solid #d74543;
+        transform: rotate(90deg);
+        left: 100px;
+        top: 200px;
+        height: 300px;
+    }
+}
+
+/* ############################ Letter R ############################ */
+
+.letter-r {
+    position: absolute;
+    left: 8px;
+    top: 500px;
+
+    .letter-r-1 {
+        border: 15px solid #d74543;
+        background-color: white;
+
+        .circle2 {
+            top: 180px;
+            animation: curveX 2s infinite ease-out alternate;
+
+            &::after {
+                content: ".";
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                left: 0px;
+                border: 32px solid #4e7f86;
+                display: block;
+                animation: curveY 2s infinite ease-in alternate;
+            }
+        }
+    }
+    .letter-r-2 {
+        border: 15px solid #4e7f86;
+        transform: rotate(90deg);
+        height: 310px;
+        top: -105px;
+        left: 105px;
+
+        .circle1 {
+            border: 32px solid #efd097;
+            top: 220px;
+            animation: circle_5 2s infinite alternate;
+        }
+
+        .circle3 {
+            border: 32px solid #efd097;
+            top: 10px;
+            animation: circle_6 2s infinite alternate;
+        }
+    }
+    .overflowr3 {
+        overflow: hidden;
+        width: 130px;
+        height: 130px;
+        position: relative;
+        top: 170px;
+    }
+
+    .letter-r-3 {
+        transform: rotate(90deg);
+        border: 15px solid #4e7f86;
+        left: 150px;
+        top: -150px;
+    }
+
+    .overflowr4 {
+        overflow: hidden;
+        width: 130px;
+        height: 130px;
+        position: relative;
+        top: -15px;
+        left: -15px;
+    }
+
+    .letter-r-4 {
+        transform: rotate(90deg);
+        border: 15px solid #4e7f86;
+        left: 150px;
+        top: -150px;
+    }
+
+    .curved-line {
+        position: absolute;
+        width: 340px;
+        height: 112px;
+        border: solid 15px #000;
+        border-color: #4e7f86 transparent transparent transparent;
+        border-radius: 50%/100% 100% 0 0;
+        transform: rotate(140deg);
+        top: 123px;
+        left: 41px;
+
+        .circle4 {
+            top: 19px;
+            left: 186px;
+            border: 32px solid #4e7f86;
+            animation: circle_4 2s infinite alternate;
+        }
+    }
+
+    .curved-line2 {
+        position: absolute;
+        width: 200px;
+        height: 112px;
+        border: solid 15px #000;
+        border-color: #4e7f86 transparent transparent transparent;
+        border-radius: 50%/100% 100% 0 0;
+        transform: rotate(163deg);
+        top: 42px;
+        left: 27px;
+    }
+
+    .letter-r-5 {
+        transform: rotate(-30deg);
+        border: 15px solid #efd097;
+        left: 155px;
+        top: 152px;
+        height: 260px;
+    }
+}
+
+/* ############################ Letter D ############################ */
+
+.letter-d {
+    position: absolute;
+    left: 450px;
+    top: 500px;
+
+    .letter-d-1 {
+        border: 15px solid #efd097;
+    }
+
+    .overflowd2 {
+        overflow: hidden;
+        width: 190px;
+        height: 130px;
+        position: relative;
+        top: 0;
+    }
+
+    .circle1 {
+        top: 25px;
+        left: 25px;
+        border: 32px solid #4e7f86;
+        animation: circle_1 2s infinite alternate;
+    }
+
+    .letter-d-2 {
+        transform: rotate(90deg);
+        border: 15px solid #d74543;
+        left: 150px;
+        top: -150px;
+    }
+
+    .overflowd3 {
+        overflow: hidden;
+        width: 190px;
+        height: 130px;
+        position: relative;
+        top: 170px;
+    }
+
+    .circle2 {
+        top: 325px;
+        left: 25px;
+        border: 32px solid #d74543;
+        animation: circle_1_revert 2s infinite alternate;
+    }
+
+    .letter-d-3 {
+        transform: rotate(90deg);
+        border: 15px solid #4e7f86;
+        left: 150px;
+        top: -150px;
+    }
+
+    .overflowd4 {
+        overflow: hidden;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 150px;
+        left: 225px;
+    }
+
+    .letter-d-4 {
+        border: 15px solid #4e7f86;
+        left: 0;
+        top: 0;
+    }
+
+    .overflowd5 {
+        overflow: hidden;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 150px;
+        left: 225px;
+        background-color: white;
+    }
+
+    .circle3 {
+        border: 32px solid #efd097;
+        top: 175px;
+        left: 250px;
+        animation: circle_7 2s infinite alternate;
+    }
+
+    .letter-d-5 {
+        border: 15px solid #d74543;
+        left: 0;
+        top: -300px;
+    }
+
+    .curved-lined1 {
+        position: absolute;
+        width: 290px;
+        height: 114px;
+        border: solid 15px #000;
+        border-color: #d74543 transparent transparent transparent;
+        border-radius: 50%/100% 100% 0 0;
+        transform: rotate(56deg);
+        top: 43px;
+        left: 106px;
+    }
+
+    .curved-lined2 {
+        position: absolute;
+        width: 105px;
+        height: 30px;
+        border: solid 15px #000;
+        border-color: #d74543 transparent transparent transparent;
+        border-radius: 50%/100% 100% 0 0;
+        transform: rotate(51deg);
+        top: 129px;
+        left: 141px;
+    }
+
+    .curved-lined3 {
+        position: absolute;
+        width: 290px;
+        height: 114px;
+        border: solid 15px #000;
+        border-color: #4e7f86 transparent transparent transparent;
+        border-radius: 50%/100% 100% 0 0;
+        transform: rotate(146deg);
+        top: 268px;
+        left: 81px;
+    }
+
+    .curved-lined4 {
+        position: absolute;
+        width: 103px;
+        height: 30px;
+        border: solid 15px #000;
+        border-color: #4e7f86 transparent transparent transparent;
+        border-radius: 50%/100% 100% 0 0;
+        transform: rotate(132deg);
+        top: 244px;
+        left: 140px;
+    }
+
+    @media not all and (min-resolution: 0.001dpcm) {
+        .curved-lined1 {
+            position: absolute;
+            width: 330px;
+            height: 114px;
+            border: solid 15px #000;
+            border-color: #d74543 transparent transparent transparent;
+            border-radius: 50%/100% 100% 0 0;
+            transform: rotate(48deg);
+            top: 43px;
+            left: 75px;
+        }
+
+        .curved-lined3 {
+            position: absolute;
+            width: 320px;
+            height: 114px;
+            border: solid 15px #000;
+            border-color: #4e7f86 transparent transparent transparent;
+            border-radius: 50%/100% 100% 0 0;
+            transform: rotate(137deg);
+            top: 253px;
+            left: 71px;
+        }
+    }
+
+    @-moz-document url-prefix() {
+        .curved-lined1 {
+            position: absolute;
+            width: 330px;
+            height: 114px;
+            border: solid 15px #000;
+            border-color: #d74543 transparent transparent transparent;
+            border-radius: 50%/100% 100% 0 0;
+            transform: rotate(48deg);
+            top: 43px;
+            left: 75px;
+        }
+
+        .curved-lined3 {
+            position: absolute;
+            width: 320px;
+            height: 114px;
+            border: solid 15px #000;
+            border-color: #4e7f86 transparent transparent transparent;
+            border-radius: 50%/100% 100% 0 0;
+            transform: rotate(137deg);
+            top: 253px;
+            left: 71px;
+        }
+    }
+}
+
+/* ############################ Patchs ############################ */
+
+.patchd1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    left: 80px;
+}
+.patchd2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    left: 90px;
+    top: 315px;
+}
+.patchd3 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    left: 40px;
+    top: 330px;
+    border-radius: 100%;
+}
+.patchr1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    left: 200px;
+    top: 25px;
+}
+.patchr2 {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: white;
+    left: 323px;
+    top: 108px;
+    border-radius: 0 0 82% 0;
+}
+
+/* ############################ Keyframes ############################ */
+
+@keyframes circle_1 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(300px);
+    }
+}
+
+@keyframes circle_1_revert {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-300px);
+    }
+}
+
+@keyframes circle_2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes circle_3 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateX(120px);
+    }
+}
+
+@keyframes circle_4 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-155px) translateX(28px);
+    }
+}
+
+@keyframes circle_5 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-210px);
+    }
+}
+
+@keyframes circle_6 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(210px);
+    }
+}
+
+@keyframes circle_7 {
+    33% {
+        border: 32px solid #efd097;
+    }
+    66% {
+        border: 32px solid #4e7f86;
+    }
+    100% {
+        border: 32px solid #d74543;
+    }
+}
+
+@keyframes curveX {
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateX(210px);
+    }
+}
+
+@keyframes curveY {
+    100% {
+        animation-timing-function: ease-in;
+        transform: translateY(-170px);
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "nerdearla",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "sass": "^1.23.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "sass": "sass --watch ./scss/style.scss:./css/style.css"
+    },
+    "author": "",
+    "license": "ISC"
+}
